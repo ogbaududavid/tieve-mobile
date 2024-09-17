@@ -1,0 +1,271 @@
+{ "catalogue": [
+    {
+      "id": 1,
+      "productType": "Joggers",
+      "brand": "Tieve",
+      "size": "10",
+      "imageURL": "/images/joggers/jogger1.jpg",
+      "price": 15000,
+      "color": "Black"
+    },
+    {
+        "id": 2,
+        "productType": "Joggers",
+        "brand": "Tieve",
+        "size": "10",
+        "imageURL": "/images/joggers/jogger2.jfif",
+        "price": 20000,
+        "color": "Brown"
+    },
+    {
+        "id": 3,
+        "productType": "Joggers",
+        "brand": "Tieve",
+        "size": "10",
+        "imageURL": "/images/joggers/jogger3.jpg",
+        "price": 20000,
+        "color": "Black"
+    },
+    {
+        "id": 4,
+        "productType": "Joggers",
+        "brand": "Tieve",
+        "size": "8",
+        "imageURL": "/images/joggers/jogger4.jpg",
+        "price": 10000,
+        "color": "Yellow"
+    },
+    {
+        "id": 5,
+        "productType": "Joggers",
+        "brand": "Tieve",
+        "size": "8",
+        "imageURL": "/images/joggers/jogger5.webp",
+        "price": 15000,
+        "color": "Peach"
+    },
+    {
+        "id": 6,
+        "productType": "Joggers",
+        "brand": "Tieve",
+        "size": "12",
+        "imageURL": "/images/joggers/jogger6.jpg",
+        "price": 23000,
+        "color": "Black & White"
+    },
+    {
+        "id": 7,
+        "productType": "Joggers",
+        "brand": "Tieve",
+        "size": "8",
+        "imageURL": "/images/joggers/jogger7.webp",
+        "price": 18000,
+        "color": "Brown"
+    },
+    {
+        "id": 8,
+        "productType": "Joggers",
+        "brand": "Tieve",
+        "size": "10",
+        "imageURL": "/images/joggers/jogger9.webp",
+        "price": 1800,
+        "color": "Gray & White"
+    },
+    {
+        "id": 9,
+        "productType": "Joggers",
+        "brand": "Tieve",
+        "size": "12",
+        "imageURL": "/images/joggers/jogger10.webp",
+        "price": 15000,
+        "color": "Gray"
+    },
+    {
+        "id": 10,
+        "productType": "Joggers",
+        "brand": "Tieve",
+        "size": "8",
+        "imageURL": "/images/joggers/jogger11.jpg",
+        "price": 18000,
+        "color": "Black & White"
+    },
+    {
+        "id": 11,
+        "productType": "Dresses",
+        "brand": "Tieve",
+        "size": "10",
+        "imageURL": "/images/dresses/dress1.jpg",
+        "price": 25000,
+        "color": "Blue"
+    },
+    {   "id": 12,
+        "productType": "Dresses",
+        "brand": "Tieve",
+        "size": "10",
+        "imageURL": "/images/dresses/dress2.jpg",
+        "price": 20000,
+        "color": "White"
+    },
+    {   
+        "id": 13,
+        "productType": "Dresses",
+        "brand": "Tieve",
+        "size": "10",
+        "imageURL": "/images/dresses/dress3.jpg",
+        "price": 20000,
+        "color": "Black"
+    },
+    {   
+        "id": 14,
+        "productType": "Dresses",
+        "brand": "Tieve",
+        "size": "8",
+        "imageURL": "/images/dresses/dress4.jpg",
+        "price": 35000,
+        "color": "Black"
+    },
+    {
+        "id": 15,
+        "productType": "Dresses",
+        "brand": "Tieve",
+        "size": "10",
+        "imageURL": "/images/dresses/dress5.jpg",
+        "price": 20000,
+        "color": "Gold"
+    },
+    {   
+        "id": 16,
+        "productType": "Dresses",
+        "brand": "Tieve",
+        "size": "12",
+        "imageURL": "/images/dresses/dress6.jpg",
+        "price": 18000,
+        "color": "Orange"
+    },
+    {
+        "id": 17,
+        "productType": "Dresses",
+        "brand": "Tieve",
+        "size": "8",
+        "imageURL": "/images/dresses/dress7.jpg",
+        "price": 18000,
+        "color": "Gold"
+    },
+    {   "id": 18,
+        "productType": "Dresses",
+        "brand": "Tieve",
+        "size": "14",
+        "imageURL": "/images/dresses/dress8.jpg",
+        "price": 18000,
+        "color": "Dark Green"
+    },
+    {
+        "id": 19,
+        "productType": "Dresses",
+        "brand": "Tieve",
+        "size": "14",
+        "imageURL": "/images/dresses/dress9.jpg",
+        "price": 45000,
+        "color": "Light Brown"
+    },
+    {
+        "id": 20,
+        "productType": "Dresses",
+        "brand": "Tieve",
+        "size": "10",
+        "imageURL": "/images/dresses/dress10.jpg",
+        "price": 23000,
+        "color": "Green"
+    },
+    {
+        "id": 21,
+        "productType": "Shoes",
+        "brand": "Tieve",
+        "size": "42",
+        "imageURL": "/images/shoes/shoe1.jpg",
+        "price": 25000,
+        "color": "Gold"
+    },
+    {
+        "id": 22,
+        "productType": "Shoes",
+        "brand": "XB",
+        "size": "40",
+        "imageURL": "/images/shoes/shoe2.jpg",
+        "price": 20000,
+        "color": "White"
+    },
+    {
+        "id": 23,
+        "productType": "Shoes",
+        "brand": "Tieve",
+        "size": "38",
+        "imageURL": "/images/shoes/shoe3.jpg",
+        "price": 20000,
+        "color": "Red"
+    },
+    {
+        "id": 24,
+        "productType": "Shoes",
+        "brand": "Luis Vuitton",
+        "size": "43",
+        "imageURL": "/images/shoes/shoe4.jpg",
+        "price": 35000,
+        "color": "White & Blue"
+    },
+    {
+        "id": 25,
+        "productType": "Shoes",
+        "brand": "Reebok",
+        "size": "38",
+        "imageURL": "/images/shoes/shoe5.jpg",
+        "price": 20000,
+        "color": "White & Black"
+    },
+    {
+        "id": 26,
+        "productType": "Shoes",
+        "brand": "Reebok",
+        "size": "40",
+        "imageURL": "/images/shoes/shoe6.jpg",
+        "price": 24000,
+        "color": "Black & White"
+    },
+    {
+        "id": 27,
+        "productType": "Shoes",
+        "brand": "Generic",
+        "size": "38",
+        "imageURL": "/images/shoes/shoe7.jpg",
+        "price": 18000,
+        "color": "White & Light Blue"
+    },
+    {
+        "id": 28,
+        "productType": "Shoes",
+        "brand": "Generic",
+        "size": "43",
+        "imageURL": "/images/shoes/shoe8.jpg",
+        "price": 18000,
+        "color": "Black"
+    },
+    {
+        "id": 29,
+        "productType": "Shoes",
+        "brand": "Luis Vuitton",
+        "size": "40",
+        "imageURL": "/images/shoes/shoe9.jpg",
+        "price": 45000,
+        "color": "Green & White"
+    },
+    {
+        "id": 30,
+        "productType": "Shoes",
+        "brand": "Tieve",
+        "size": "32",
+        "imageURL": "/images/shoes/shoe10.jpg",
+        "price": 23000,
+        "color": "Black & Light Blue"
+    }
+  ]
+}
