@@ -12,6 +12,7 @@ import {
 import verifyLogin from "../assets/utility/verifyLogin";
 import navigationHandler from "../assets/utility/navigationHandler";
 
+//A screen for creating a user's account
 const CreateAccountScreen = ({ navigation }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");

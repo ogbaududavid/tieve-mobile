@@ -2,6 +2,7 @@ import storage from "../../components/storage";
 import loginUser from "./loginUser";
 import saveCartItem from "./saveCartItem";
 
+//A function for validating and authenticating user data
 const verifyLogin = (username, password, { navigation }) => {
   if (username && password) {
     if (password.length < 5) {

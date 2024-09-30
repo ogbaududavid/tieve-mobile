@@ -1,6 +1,7 @@
 import storage from "../../components/storage";
 import loginUser from "./loginUser";
 
+//A function for verifying  user data and authorization
 const verifyLogin = (username, password, { navigation }) => {
   if (username && password) {
     if (password.length < 5) {

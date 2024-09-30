@@ -1,12 +1,13 @@
 import React from 'react'
 import { Text, TextInput } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import navigationHandler from '../assets/utility/navigationHandler'
 import { StyleSheet } from 'react-native'
 import { TouchableOpacity } from 'react-native'
 import { Image } from 'react-native'
-import LoadPaymentScreen from './LoadPaymentScreen'
 import { View } from 'react-native'
+import navigationHandler from '../assets/utility/navigationHandler'
+
+//A screen for displaying checkout information before payment is made
 const CheckoutScreen = ({navigation}) => {
     
     return (
@@ -15,20 +16,20 @@ const CheckoutScreen = ({navigation}) => {
           <View style={Styles.checkoutSection}>
             <Text style={Styles.checkoutSectionText}>Enter card details</Text>
             <Text style={Styles.checkoutSectionText}>Fullname</Text>
-              <TextInput style={Styles.checkoutSectionInput}></TextInput>
+              <TextInput required = 'true' style={Styles.checkoutSectionInput}></TextInput>
             <Text style={Styles.checkoutSectionText}>Address</Text>
-              <TextInput style={Styles.checkoutSectionInput}></TextInput>
+              <TextInput required = 'true' style={Styles.checkoutSectionInput}></TextInput>
             <Text style={Styles.checkoutSectionText}>Card Number</Text>
-              <TextInput style={Styles.checkoutSectionInput} ></TextInput>
+              <TextInput required = 'true' style={Styles.checkoutSectionInput} ></TextInput>
           </View>
         <Text style={{color: "black", textAlign: "center", justifyContent: "center", alignItems: "center", fontSize: 20}}>{`Payment Total: N${global.total.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`}</Text>
         <TouchableOpacity
-        // onPress={() => navigationHandler({ navigation }, "LoadPayment")}      
+        onPress={() => navigationHandler({ navigation }, "LoadPayment")}      
         style={Styles.makePayment}>
           <Text style={Styles.makePaymentText} > Make Payment </Text>
           <Image
-          style={Styles.paymentCashIcon}
-          source={require("../assets/images/cashicon4.png")}
+            style={Styles.paymentCashIcon}
+            source={require("../assets/images/cashicon4.png")}
           />
           </TouchableOpacity>
           </View>

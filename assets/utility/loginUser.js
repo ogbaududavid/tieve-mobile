@@ -1,6 +1,7 @@
 import storage from "../../components/storage";
 import navigationHandler from "./navigationHandler";
 
+//A function for authenticating and login in a user
 const loginUser = (username, password, { navigation }) => {
   var retrivedPassword;
   var retrivedUsername;

@@ -11,7 +11,8 @@ import navigationHandler from "../assets/utility/navigationHandler";
 import LoadPaymentScreen from "./LoadPaymentScreen";
 import SuccessScreen from "./SuccessScreen";
 
-const views = [0];
+//A screen for displaying the items in te user's cart.
+const views = [0]
 const UserCartScreen = ({navigation}) => {
   const[reload, setReload] = useState(false)
   if (global.usersCart.length > 0){
@@ -27,7 +28,7 @@ const UserCartScreen = ({navigation}) => {
             {global.usersCart.map((item) => {
               global.total += item.price
               return (
-                <View style={Styles.itemSection}>
+                <View style={Styles.itemSection} key = {item.key}>
                   <Image
                     source={item.imageURL}
                     style={Styles.itemSectionImage}

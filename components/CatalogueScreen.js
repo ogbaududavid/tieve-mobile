@@ -1,4 +1,4 @@
-import { React, useContext, useEffect, useState } from "react";
+import { React, useState } from "react";
 import {
   Image,
   View,
@@ -10,9 +10,11 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import ItemDisplayBuild from "./ItemDisplayBuild";
+import navigationHandler from "../assets/utility/navigationHandler";
 
+//A screen for displaying the store's catalogue
 const views = ["0"];
-const CatalogueScreen = () => {
+const CatalogueScreen = ({ navigation }) => {
   const catalogue = [
     {
       id: 1,
@@ -307,18 +309,11 @@ const CatalogueScreen = () => {
                 style={{
                   textAlign: "right",
                   fontSize: 12,
-                  paddingRight: 10,
-                  paddingTop: 10,
+                  padding: 10,
                 }}
               >
                 Hello! {global.username}
               </Text>
-              <View style={Styles.catalogueHeader}>
-                <Text style={Styles.catalogueHeaderText}>CONTACT</Text>
-                <Text style={Styles.catalogueHeaderText}>MY CART</Text>
-                <Text style={Styles.catalogueHeaderText}>PROMO CODE</Text>
-                <Text style={Styles.catalogueHeaderText}>HOT SALES</Text>
-              </View>
             </View>
 
             <View style={Styles.searchBarDiv}>
@@ -326,10 +321,12 @@ const CatalogueScreen = () => {
               <Text style={Styles.cartCounter}>
                   {global.usersCart.length}
               </Text>
-              <Image
-                style={Styles.searchBarCartIcon}
-                source={require("../assets/images/carticon.png")}
-              />             
+              <Pressable style={Styles.searchBarCartButton} onPress={() => navigationHandler({navigation}, 'Cart')}>
+                <Image
+                  style={Styles.searchBarCartIcon}
+                  source={require("../assets/images/carticon.png")}
+                /> 
+              </Pressable>            
               </View>
               <TextInput
                 placeholder="Search by brand."
@@ -388,6 +385,11 @@ const Styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 2,
   },
+  searchBarCartButton: {
+    position: "absolute",
+    top: 0,
+    right: 2,
+  },
   searchBarCartIcon: {
     width: global.clickedCart? 40 : 30,
     height: global.clickedCart? 40 : 30,
@@ -395,9 +397,6 @@ const Styles = StyleSheet.create({
     alignSelf: "center",
     backgroundColor: "white",
     borderColor: "orange",
-    position: "absolute",
-    top: 0,
-    right: 2,
   },
   cartCounter: {
     width: "100%",

@@ -7,6 +7,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from "./components/LoginScreen";
 import HomeScreen from "./components/HomeScreen";
 import CreateAccountScreen from "./components/CreateAccountScreen";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const Stack = createStackNavigator();
 
@@ -26,30 +27,32 @@ const ScreenA = ({ navigation }) => {
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="loading..."
-          component={ScreenA}
-          options={{ header: () => null }}
-        />
-        <Stack.Screen
-          name="Login"
-          component={LoginScreen}
-          options={{ header: () => null }}
-        />
-        <Stack.Screen
-          name="Create"
-          component={CreateAccountScreen}
-          options={{ header: () => null }}
-        />
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{ header: () => null }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <GestureHandlerRootView>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="loading..."
+            component={ScreenA}
+            options={{ header: () => null }}
+          />
+          <Stack.Screen
+            name="Login"
+            component={LoginScreen}
+            options={{ header: () => null }}
+          />
+          <Stack.Screen
+            name="Create"
+            component={CreateAccountScreen}
+            options={{ header: () => null }}
+          />
+          <Stack.Screen
+            name="Home"
+            component={HomeScreen}
+            options={{ header: () => null }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+     </GestureHandlerRootView>
   );
 };
 

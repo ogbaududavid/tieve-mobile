@@ -1,4 +1,6 @@
 import storage from "../../components/storage";
+
+//A function for saving items to the user's cart
 const saveCartItem = (username, item=[], CartItems = []) => {
    if(item.length > 0 || Object.keys(item).length > 0){
    

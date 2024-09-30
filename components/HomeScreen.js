@@ -1,13 +1,12 @@
-import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import CatalogueScreen from "./CatalogueScreen";
-import { View, Text, Image, StyleSheet, TextBase } from "react-native";
+import { Image} from "react-native";
 import CartScreen from "./CartScreen";
-import AccountDetailsScreen   from "./AccountDetailsScreen";
+import LogoutScreen from "./LogoutScreen"
 
 const Tab = createBottomTabNavigator();
 
-
+//The home screen that holds the bottom tab navigators
 const HomeScreen = () => {
   return (
     <Tab.Navigator
@@ -20,7 +19,7 @@ const HomeScreen = () => {
           } else if (route.name === "Cart") {
             iconPath = require("../assets/images/cart.jpg");
             size = focused ? 30 : 20;
-          } else if (route.name === "AccountDetails") {
+          } else if (route.name === "Logout") {
             iconPath = require("../assets/images/accounticon.png");
             size = focused ? 30 : 20;
           }
@@ -50,8 +49,8 @@ const HomeScreen = () => {
       }
       />
      <Tab.Screen
-        name="AccountDetails"
-        component={AccountDetailsScreen}
+        name="Logout"
+        component={LogoutScreen}
         options={{ header: () => null }}
       />
       

@@ -1,11 +1,15 @@
 import React from 'react'
-import { Text } from 'react-native'
+import { Image, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
+//A success screen that pops up on successful completion
 const SuccessScreen = () => {
   return (
     <SafeAreaView>
-    <Text>Transaction Successful!</Text>
+      <View style = {{flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+        <Image source={require('../assets/images/success.png')} style={{width: 200, height: 200, borderRadius: 100}}/>
+        <Text>Successful!</Text>
+      </View>
     </SafeAreaView>
   )
 }

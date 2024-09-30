@@ -13,6 +13,7 @@ import {
   Pressable,
 } from "react-native";
 
+//A screen for collecting the user's login information
 const LoginScreen = ({ navigation }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");

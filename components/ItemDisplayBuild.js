@@ -4,14 +4,11 @@ import {
   View,
   Text,
   StyleSheet,
-  ScrollView,
-  Pressable,
-  TextInput,
   TouchableOpacity,
 } from "react-native";
-import { useState } from "react";
 import saveCartItem from "../assets/utility/saveCartItem";
 
+//A component for dynamically building the ad/item card
 const ItemDisplayBuild = (item, setCartCounter) => {
   return (
     <View style={Styles.itemSection} key={item.id}>

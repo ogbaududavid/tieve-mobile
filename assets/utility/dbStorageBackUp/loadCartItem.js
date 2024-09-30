@@ -1,11 +1,7 @@
-import { View, Text } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { ScrollView } from "react-native";
 import { StyleSheet } from "react-native";
 import storage from "../../components/storage";
-import { useRef } from "react";
-import { useState } from "react";
 
+//A function for loading the items in the user's cart
 const loadCartItem = (username) => {
   let CartItems;
   userItemKey = username + "'s Cart"
