@@ -1,12 +1,14 @@
 # Overview
 Tieve ReactNative App
-This application is designed to provide a simple yet functional e-commerce experience that allows users browse various clothing items, add an item to their cart, and proceed through a checkout flow. The goal is to use various programming tools and concepts such as lists, localstorage, functions, and a new programming language-ReactNative to solve real world problems. In this case, the problem solved is that that the apps easens the shopping process by allowing users browse through and but clothing items from the comfort of their phones.
+This application is designed to provide a simple yet functional e-commerce experience that allows users browse various clothing items, add an item to their cart, and proceed through a checkout flow. The goal is to use various programming tools and concepts such as lists, localstorage, functions, and a new programming language-ReactNative to solve real world problems. In this case, the problem solved is that the apps easens the shopping process by allowing users browse through and buy clothing items from the comfort of their phones.
 
 # Youtube Link
+https://youtu.be/0ujK4ai_YeY
 
 # Development Environment
 This project is built using:
-ReactNativs (a JavaScript framework for building cross-platform mobile applications) Expo Go (A ReactNative framework)
+ReactNativs (a JavaScript framework for building cross-platform mobile applications) 
+Expo Go (A ReactNative framework)
 Node (A JavaScript package manager)
 Other NPM packages 
 
@@ -19,4 +21,5 @@ Other NPM packages
 # Future Work
 1. Add linting and formating to my code
 2. Add form control and validation to the checkout/payment screen
-3. 
+3. Use a database like mongodb for data storage
+4. Add error handling
